@@ -9,7 +9,7 @@ var plinkos=[];
 var divs=[];
 var part=[];
 var divisionHeight=300;
-var w=random(220,260);
+
 function preload() {
     
 }
@@ -39,9 +39,7 @@ function setup(){
     for(var j=40;j<=width;j+=50){
         plinkos.push(new Plinko(j+17,275,10));
     }
-    if(frameCount%20===0){
-        part.push(new Particle(random(w,10,10)));
-    }
+    
     
 }
 
@@ -49,7 +47,9 @@ function draw(){
     background(0);
 
     Engine.update(engine);
-    
+    if(frameCount%20===0){
+        part.push(new Particle(random(220,260),10,10));
+    }
     g.display();
     g1.display();
     g2.display();

@@ -2,7 +2,8 @@ class Particle {
     constructor(x,y,radius) {
        var options={
             isStatic:false,
-            restitution:0.4
+            restitution:0.4,
+            friction:0.01
        
        }
        this.body= Bodies.circle(x,y,radius,options);
