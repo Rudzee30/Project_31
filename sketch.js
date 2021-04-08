@@ -21,7 +21,7 @@ function setup(){
     world = engine.world;
     
     g= new Ground(240,785,480,30);
-    g1= new Ground(5,400,10,800);
+    g1= new Ground(5,400,12,800);
     g2= new Ground(240,5,480,10);
     g3= new Ground(475,400,10,800);
     for(var k=20;k<=width;k=k+89){
